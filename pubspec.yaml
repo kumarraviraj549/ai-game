@@ -9,16 +9,21 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  cupertino_icons: ^1.0.2
-  provider: ^6.0.5
-  audioplayers: ^5.2.1
+  cupertino_icons: ^1.0.6
+  provider: ^6.1.1
   shared_preferences: ^2.2.2
   vibration: ^1.8.4
+  # AdMob for monetization
+  google_mobile_ads: ^4.0.0
+  # Firebase core for ads
+  firebase_core: ^2.24.2
+  # Audio (removed due to potential issues)
+  # audioplayers: ^5.2.1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^3.0.0
+  flutter_lints: ^3.0.1
 
 flutter:
   uses-material-design: true
@@ -26,9 +31,10 @@ flutter:
     - assets/images/
     - assets/sounds/
 
-  fonts:
-    - family: Orbitron
-      fonts:
-        - asset: assets/fonts/Orbitron-Regular.ttf
-        - asset: assets/fonts/Orbitron-Bold.ttf
-          weight: 700
+  # Simplified fonts - using system fonts to avoid loading issues
+  # fonts:
+  #   - family: Orbitron
+  #     fonts:
+  #       - asset: assets/fonts/Orbitron-Regular.ttf
+  #       - asset: assets/fonts/Orbitron-Bold.ttf
+  #         weight: 700
